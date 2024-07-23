@@ -1,0 +1,2 @@
+# Jarvis Voice Assistant
+Jarvis is a simple voice assistant project built using Python. It can perform various tasks such as searching Wikipedia, opening websites, playing music, and sending emails based on voice commands.
