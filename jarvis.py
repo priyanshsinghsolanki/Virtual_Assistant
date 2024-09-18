@@ -1,5 +1,5 @@
 # pip install pyaudio
-
+# pip install setuptools
 import pyttsx3 #pip install pyttsx3
 import speech_recognition as sr #pip install speechRecognition
 import datetime
@@ -81,7 +81,7 @@ if __name__ == "__main__":
         elif 'open google' in query:
             webbrowser.open("google.com")
 
-        elif 'open stackoverflow' in query:
+        elif 'open stack overflow' in query:
             webbrowser.open("stackoverflow.com")   
 
 
@@ -108,6 +108,9 @@ if __name__ == "__main__":
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("Sorry my friend. I am not able to send this email")    
+                speak("Sorry my friend. I am not able to send this email")
+        elif 'quit' in query:
+            speak("Thank You")
+            break
         else:
             print("No query matched")
